@@ -8,10 +8,10 @@
    \date 12/2015
 */
  int count;
-
+ byte go;
 void main(void){
      count = 0;
-
+      go=false;
  PRO_BOT128_INIT();
   AbsDelay(100);
 
@@ -35,17 +35,22 @@ void main(void){
               AbsDelay(100);
 
 
-    DRIVE_ON();
-    AbsDelay(100);
 
+    AbsDelay(100);
+            go=true;
    count++;
-         if((count % 2)== 0){
+   }
+         if(((count % 2)== 0)& go){
+               DRIVE_ON();
               FLL_OFF();
               FLR_ON();
 
               DRIVE_OFF();
               AbsDelay(1000);
+              go=false;
          }else{
+             if(((count % 2)!= 0)){
+             DRIVE_ON();
              FLR_ON();
              FLL_ON();
 
@@ -56,10 +61,14 @@ void main(void){
              MOTOR_DIR(1,1);
 
              MOTOR_POWER(240,240);
+              if(go){
               AbsDelay(1000);
+              go=false;
+              }
 
+              }
          }
-   }
+
  }
 
 }
