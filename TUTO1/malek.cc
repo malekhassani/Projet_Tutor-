@@ -21,11 +21,20 @@ void main(void){
  while(1){
 
 
-         SOUND_LEVEL();
+
     Msg_WriteText("LEVEL");
          Msg_WriteInt(SOUND_LEVEL());
          Msg_WriteChar(13);
          AbsDelay(100);
+
+         Msg_WriteText("lumier_left");
+         Msg_WriteInt(LDR_LEFT());
+         Msg_WriteChar(13);
+         AbsDelay(100);
+         Msg_WriteText("lumiere_right");
+         Msg_WriteInt(LDR_RIGHT());
+         Msg_WriteChar(13);
+         AbsDelay(1000);
 
 
 
