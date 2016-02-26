@@ -11,10 +11,10 @@
  byte go;
 void main(void){
      count = 0;
-      go=false;
+
  PRO_BOT128_INIT();
   AbsDelay(100);
-
+        DRIVE_ON();
     DRIVE_INIT();
   AbsDelay(100);
 
@@ -34,11 +34,11 @@ void main(void){
          Msg_WriteText("lumiere_right");
          Msg_WriteInt(LDR_RIGHT());
          Msg_WriteChar(13);
-         AbsDelay(1000);
+         AbsDelay(100);
 
 
 
-  if(SOUND_LEVEL()>650){
+  if(SOUND_LEVEL()>800){
        Msg_WriteText("hellooo");
               Msg_WriteChar(13);
               AbsDelay(100);
@@ -46,20 +46,20 @@ void main(void){
 
 
     AbsDelay(100);
-            go=true;
+
    count++;
    }
-         if(((count % 2)== 0)& go){
+        if(((count % 2)== 0)){
                DRIVE_ON();
               FLL_OFF();
               FLR_ON();
 
-              DRIVE_OFF();
-              AbsDelay(1000);
-              go=false;
-         }else{
+              MOTOR_STOP();
+              AbsDelay(100);
+
+         }
              if(((count % 2)!= 0)){
-             DRIVE_ON();
+            DRIVE_ON();
              FLR_ON();
              FLL_ON();
 
@@ -70,15 +70,13 @@ void main(void){
              MOTOR_DIR(1,1);
 
              MOTOR_POWER(240,240);
-              if(go){
-              AbsDelay(1000);
-              go=false;
-              }
 
-              }
-         }
+              AbsDelay(100);
+
+
+             }
+
 
  }
 
 }
-
