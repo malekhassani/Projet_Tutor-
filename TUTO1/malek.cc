@@ -50,7 +50,7 @@ void main(void){
    count++;
    }
         if(((count % 2)== 0)){
-               DRIVE_ON();
+              DRIVE_ON();
               FLL_OFF();
               FLR_ON();
 
@@ -58,8 +58,8 @@ void main(void){
               AbsDelay(100);
 
          }
-             if(((count % 2)!= 0)){
-            DRIVE_ON();
+            if(((count % 2)!= 0)){
+             DRIVE_ON();
              FLR_ON();
              FLL_ON();
 
