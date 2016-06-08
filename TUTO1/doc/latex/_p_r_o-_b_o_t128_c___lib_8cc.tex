@@ -1,0 +1,1256 @@
+\section{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.cc File Reference}
+\label{_p_r_o-_b_o_t128_c___lib_8cc}\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+
+
+la bibliotheque utiliser  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf LF}~0x0A
+\item 
+\#define {\bf CR}~0x0D
+\item 
+\#define {\bf S\+P\+A\+CE}~0x20
+\item 
+\#define {\bf S\+CL}~24
+\item 
+\#define {\bf S\+DA}~25
+\item 
+\#define {\bf ON}~0
+\item 
+\#define {\bf O\+FF}~1
+\item 
+\#define {\bf O\+UT}~1
+\item 
+\#define {\bf IN}~0
+\item 
+\#define {\bf F\+LL}~19
+\item 
+\#define {\bf F\+LR}~18
+\item 
+\#define {\bf B\+LL}~17
+\item 
+\#define {\bf B\+LR}~16
+\item 
+\#define {\bf Line\+L\+ED}~20
+\item 
+\#define {\bf Button}~36
+\item 
+\#define {\bf Line\+\_\+\+L\+ED}~20
+\item 
+\#define {\bf Motor\+\_\+\+Enable}~15
+\item 
+\#define {\bf Encoder\+\_\+\+IR}~8
+\item 
+\#define {\bf P\+W\+M\+\_\+\+IR}~35
+\item 
+\#define {\bf I\+R\+\_\+left}~27
+\item 
+\#define {\bf I\+R\+\_\+right}~29
+\item 
+\#define {\bf T\+S\+OP}~26
+\item 
+\#define {\bf Tone\+\_\+\+C1}~440
+\item 
+\#define {\bf Tone\+\_\+\+Cis1}~413
+\item 
+\#define {\bf Tone\+\_\+\+D1}~392
+\item 
+\#define {\bf Tone\+\_\+\+Dis1}~371
+\item 
+\#define {\bf Tone\+\_\+\+E1}~350
+\item 
+\#define {\bf Tone\+\_\+\+F1}~330
+\item 
+\#define {\bf Tone\+\_\+\+Fis1}~312
+\item 
+\#define {\bf Tone\+\_\+\+G1}~294
+\item 
+\#define {\bf Tone\+\_\+\+Gis1}~277
+\item 
+\#define {\bf Tone\+\_\+\+A1}~262
+\item 
+\#define {\bf Tone\+\_\+\+Ais1}~247
+\item 
+\#define {\bf Tone\+\_\+\+H1}~234
+\item 
+\#define {\bf Tone\+\_\+\+C2}~220
+\item 
+\#define {\bf Tone\+\_\+\+Cis2}~208
+\item 
+\#define {\bf Tone\+\_\+\+D2}~196
+\item 
+\#define {\bf Tone\+\_\+\+Dis2}~185
+\item 
+\#define {\bf Tone\+\_\+\+E2}~175
+\item 
+\#define {\bf Tone\+\_\+\+F2}~165
+\item 
+\#define {\bf Tone\+\_\+\+Fis2}~156
+\item 
+\#define {\bf Tone\+\_\+\+G2}~147
+\item 
+\#define {\bf Tone\+\_\+\+Gis2}~138
+\item 
+\#define {\bf Tone\+\_\+\+A2}~131
+\item 
+\#define {\bf Tone\+\_\+\+Ais2}~125
+\item 
+\#define {\bf Tone\+\_\+\+H2}~117
+\item 
+\#define {\bf U\+N\+I\+T\+\_\+\+T\+I\+CK}~3
+\item 
+\#define {\bf S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR}~2
+\item 
+\#define {\bf Start\+\_\+\+Power\+\_\+\+Forward}~240
+\item 
+\#define {\bf I\+\_\+up}~2
+\item 
+\#define {\bf I\+\_\+down}~2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+IT} (void)
+\begin{DoxyCompactList}\small\item\em Initialise le hardware de base du P\+R\+O-\/\+B\+O\+T12, toujours commencer pars cette fonction. \end{DoxyCompactList}\item 
+byte {\bf B\+U\+T\+T\+ON} (void)
+\item 
+void {\bf S\+Y\+S\+T\+E\+M\+\_\+\+C\+NT} (void)
+\item 
+void {\bf F\+L\+L\+\_\+\+ON} (void)
+\item 
+void {\bf F\+L\+L\+\_\+\+O\+FF} (void)
+\item 
+void {\bf F\+L\+R\+\_\+\+ON} (void)
+\item 
+void {\bf F\+L\+R\+\_\+\+O\+FF} (void)
+\item 
+void {\bf B\+L\+L\+\_\+\+ON} (void)
+\item 
+void {\bf B\+L\+L\+\_\+\+O\+FF} (void)
+\item 
+void {\bf B\+L\+R\+\_\+\+ON} (void)
+\item 
+void {\bf B\+L\+R\+\_\+\+O\+FF} (void)
+\item 
+void {\bf E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+SR} (void)
+\item 
+void {\bf E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+SR} (void)
+\item 
+void {\bf O\+D\+O\+\_\+\+R\+E\+S\+ET} (void)
+\item 
+void {\bf E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+ON} (void)
+\item 
+void {\bf E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+FF} (void)
+\item 
+void {\bf B\+E\+EP} (word Tone, word Periode)
+\item 
+word {\bf S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+EL} (void)
+\begin{DoxyCompactList}\small\item\em recupérer le niveau du bruit dans l\textquotesingle{}envirenement \end{DoxyCompactList}\item 
+word {\bf L\+D\+R\+\_\+\+L\+E\+FT} (void)
+\item 
+word {\bf L\+D\+R\+\_\+\+R\+I\+G\+HT} (void)
+\item 
+word {\bf R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+FT} (void)
+\item 
+word {\bf R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+HT} (void)
+\item 
+void {\bf L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+ON} (void)
+\item 
+void {\bf L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+FF} (void)
+\item 
+float {\bf A\+K\+K\+U\+\_\+\+S\+PG} (void)
+\item 
+word {\bf G\+E\+T\+\_\+\+A\+DC} (byte Channel)
+\item 
+void {\bf D\+R\+I\+V\+E\+\_\+\+I\+N\+IT} (void)
+\begin{DoxyCompactList}\small\item\em Initialise le moteur. \end{DoxyCompactList}\item 
+void {\bf D\+R\+I\+V\+E\+\_\+\+ON} (void)
+\begin{DoxyCompactList}\small\item\em Activer les moteurs. \end{DoxyCompactList}\item 
+void {\bf D\+R\+I\+V\+E\+\_\+\+O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Arrêter les moteurs. \end{DoxyCompactList}\item 
+void {\bf D\+R\+I\+VE} (byte left, byte right)
+\item 
+void {\bf M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+ER} (byte left, byte right)
+\item 
+void {\bf M\+O\+T\+O\+R\+\_\+\+D\+IR} (byte left, byte right)
+\item 
+void {\bf M\+O\+T\+O\+R\+\_\+\+S\+T\+OP} (void)
+\item 
+void {\bf D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+RD} (byte speed)
+\item 
+void {\bf G\+O\+\_\+\+T\+U\+RN} (int distance, int degree, byte speed)
+\item 
+void {\bf A\+C\+S\+\_\+\+I\+N\+IT} (byte sensitivity)
+\item 
+byte {\bf A\+C\+S\+\_\+\+R\+I\+G\+HT} (void)
+\item 
+byte {\bf A\+C\+S\+\_\+\+L\+E\+FT} (void)
+\item 
+void {\bf D\+E\+L\+A\+Y\+\_\+\+MS} (int time)
+\item 
+float {\bf G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+AD} (float Val)
+\item 
+float {\bf R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+AD} (float Val)
+\item 
+word {\bf M\+A\+K\+E\+\_\+\+I\+NT} (byte a, byte b)
+\item 
+int {\bf A\+B\+S\+\_\+\+I\+NT} (int Val)
+\item 
+float {\bf A\+B\+S\+\_\+\+S\+I\+N\+G\+LE} (float Val)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT}
+\item 
+int {\bf E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT}
+\item 
+int {\bf E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT}
+\item 
+int {\bf E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT}
+\item 
+int {\bf O\+D\+O\+\_\+\+L\+E\+FT}
+\item 
+int {\bf O\+D\+O\+\_\+\+R\+I\+G\+HT}
+\item 
+int {\bf C\+N\+T1}
+\item 
+int {\bf S\+W2}
+\item 
+byte {\bf left\+\_\+dir}
+\item 
+byte {\bf right\+\_\+dir}
+\item 
+int {\bf P\+O\+W\+E\+R\+\_\+\+L\+E\+FT}
+\item 
+int {\bf P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT}
+\item 
+int {\bf M\+O\+T\+O\+R\+\_\+L}
+\item 
+int {\bf M\+O\+T\+O\+R\+\_\+R}
+\item 
+int {\bf E\+R\+R\+OR}
+\item 
+int {\bf E\+R\+R\+O\+R\+\_\+\+L\+A\+ST}
+\item 
+int {\bf Direction}
+\item 
+int {\bf S\+P\+E\+ED}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+la bibliotheque utiliser 
+
+\begin{DoxyAuthor}{Author}
+Conrad 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+LL@{B\+LL}}
+\index{B\+LL@{B\+LL}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+LL}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+LL~17}\label{_p_r_o-_b_o_t128_c___lib_8cc_af2f80400df2ff4e272d30059c601c1c9}
+
+
+Definition at line 23 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+LR@{B\+LR}}
+\index{B\+LR@{B\+LR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+LR}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+LR~16}\label{_p_r_o-_b_o_t128_c___lib_8cc_aadb25b893b47395dde557883b2df4a59}
+
+
+Definition at line 24 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Button@{Button}}
+\index{Button@{Button}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Button}]{\setlength{\rightskip}{0pt plus 5cm}\#define Button~36}\label{_p_r_o-_b_o_t128_c___lib_8cc_a9a2041871e3276a9b52568efaa7c6a3e}
+
+
+Definition at line 26 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!CR@{CR}}
+\index{CR@{CR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{CR}]{\setlength{\rightskip}{0pt plus 5cm}\#define CR~0x0D}\label{_p_r_o-_b_o_t128_c___lib_8cc_a876ce77f3c672c7162658151e648389e}
+
+
+Definition at line 10 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Encoder\+\_\+\+IR@{Encoder\+\_\+\+IR}}
+\index{Encoder\+\_\+\+IR@{Encoder\+\_\+\+IR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Encoder\+\_\+\+IR}]{\setlength{\rightskip}{0pt plus 5cm}\#define Encoder\+\_\+\+IR~8}\label{_p_r_o-_b_o_t128_c___lib_8cc_a763e708eed955da9e61cd589117ce8a7}
+
+
+Definition at line 32 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!F\+LL@{F\+LL}}
+\index{F\+LL@{F\+LL}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{F\+LL}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+LL~19}\label{_p_r_o-_b_o_t128_c___lib_8cc_aa68ce4e231e243ae6760a2d37ee5df10}
+
+
+Definition at line 21 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!F\+LR@{F\+LR}}
+\index{F\+LR@{F\+LR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{F\+LR}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+LR~18}\label{_p_r_o-_b_o_t128_c___lib_8cc_af16e3a3cda3d95a52c1a2fa5c4a30f96}
+
+
+Definition at line 22 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!I\+\_\+down@{I\+\_\+down}}
+\index{I\+\_\+down@{I\+\_\+down}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{I\+\_\+down}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+\_\+down~2}\label{_p_r_o-_b_o_t128_c___lib_8cc_a83249ceea1b23d04e53f5b60725c1ca1}
+
+
+Definition at line 83 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!I\+\_\+up@{I\+\_\+up}}
+\index{I\+\_\+up@{I\+\_\+up}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{I\+\_\+up}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+\_\+up~2}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8361302712896bc861363033c559ca6d}
+
+
+Definition at line 82 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!IN@{IN}}
+\index{IN@{IN}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{IN}]{\setlength{\rightskip}{0pt plus 5cm}\#define IN~0}\label{_p_r_o-_b_o_t128_c___lib_8cc_ac2bbd6d630a06a980d9a92ddb9a49928}
+
+
+Definition at line 19 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!I\+R\+\_\+left@{I\+R\+\_\+left}}
+\index{I\+R\+\_\+left@{I\+R\+\_\+left}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{I\+R\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+R\+\_\+left~27}\label{_p_r_o-_b_o_t128_c___lib_8cc_aaf8f0151e9c3528c829aee1903e0b2da}
+
+
+Definition at line 35 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!I\+R\+\_\+right@{I\+R\+\_\+right}}
+\index{I\+R\+\_\+right@{I\+R\+\_\+right}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{I\+R\+\_\+right}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+R\+\_\+right~29}\label{_p_r_o-_b_o_t128_c___lib_8cc_a191b7f6b4ea332d66abba24c5cf25b11}
+
+
+Definition at line 36 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!LF@{LF}}
+\index{LF@{LF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{LF}]{\setlength{\rightskip}{0pt plus 5cm}\#define LF~0x0A}\label{_p_r_o-_b_o_t128_c___lib_8cc_a350c9d6cb81908d59427ee96844d1a9c}
+
+
+Definition at line 9 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Line\+\_\+\+L\+ED@{Line\+\_\+\+L\+ED}}
+\index{Line\+\_\+\+L\+ED@{Line\+\_\+\+L\+ED}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Line\+\_\+\+L\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define Line\+\_\+\+L\+ED~20}\label{_p_r_o-_b_o_t128_c___lib_8cc_ab89b28d85d972b443f44fe50073952d0}
+
+
+Definition at line 28 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Line\+L\+ED@{Line\+L\+ED}}
+\index{Line\+L\+ED@{Line\+L\+ED}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Line\+L\+ED}]{\setlength{\rightskip}{0pt plus 5cm}\#define Line\+L\+ED~20}\label{_p_r_o-_b_o_t128_c___lib_8cc_a9b10cd940df6c8103debfca44ede8bf4}
+
+
+Definition at line 25 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Motor\+\_\+\+Enable@{Motor\+\_\+\+Enable}}
+\index{Motor\+\_\+\+Enable@{Motor\+\_\+\+Enable}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Motor\+\_\+\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}\#define Motor\+\_\+\+Enable~15}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8cd852277cb33dad6d4f03a2af129ec9}
+
+
+Definition at line 30 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{O\+FF}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+FF~1}\label{_p_r_o-_b_o_t128_c___lib_8cc_a29e413f6725b2ba32d165ffaa35b01e5}
+
+
+Definition at line 17 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!ON@{ON}}
+\index{ON@{ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define ON~0}\label{_p_r_o-_b_o_t128_c___lib_8cc_ad76d1750a6cdeebd506bfcd6752554d2}
+
+
+Definition at line 16 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!O\+UT@{O\+UT}}
+\index{O\+UT@{O\+UT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{O\+UT}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+UT~1}\label{_p_r_o-_b_o_t128_c___lib_8cc_aec78e7a9e90a406a56f859ee456e8eae}
+
+
+Definition at line 18 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!P\+W\+M\+\_\+\+IR@{P\+W\+M\+\_\+\+IR}}
+\index{P\+W\+M\+\_\+\+IR@{P\+W\+M\+\_\+\+IR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{P\+W\+M\+\_\+\+IR}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+W\+M\+\_\+\+IR~35}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8af52eb7a79ac4c9f8f188574d3a5562}
+
+
+Definition at line 34 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+CL@{S\+CL}}
+\index{S\+CL@{S\+CL}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+CL}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+CL~24}\label{_p_r_o-_b_o_t128_c___lib_8cc_ab5ffc4751921608954bb7a5687566b2d}
+
+
+Definition at line 13 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+DA@{S\+DA}}
+\index{S\+DA@{S\+DA}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+DA}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+DA~25}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6890442e1cc24a0d61597a13576b8727}
+
+
+Definition at line 14 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+P\+A\+CE@{S\+P\+A\+CE}}
+\index{S\+P\+A\+CE@{S\+P\+A\+CE}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+P\+A\+CE}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+A\+CE~0x20}\label{_p_r_o-_b_o_t128_c___lib_8cc_a5ff6e798033f03e74730e99f01936f84}
+
+
+Definition at line 11 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR@{S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR}}
+\index{S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR@{S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+E\+E\+D\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+OR~2}\label{_p_r_o-_b_o_t128_c___lib_8cc_a92e5c38cb94a0e93c8ae967a04cf3022}
+
+
+Definition at line 68 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Start\+\_\+\+Power\+\_\+\+Forward@{Start\+\_\+\+Power\+\_\+\+Forward}}
+\index{Start\+\_\+\+Power\+\_\+\+Forward@{Start\+\_\+\+Power\+\_\+\+Forward}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Start\+\_\+\+Power\+\_\+\+Forward}]{\setlength{\rightskip}{0pt plus 5cm}\#define Start\+\_\+\+Power\+\_\+\+Forward~240}\label{_p_r_o-_b_o_t128_c___lib_8cc_a145c3ffcafa881199069c050787d6fcf}
+
+
+Definition at line 81 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+A1@{Tone\+\_\+\+A1}}
+\index{Tone\+\_\+\+A1@{Tone\+\_\+\+A1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+A1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+A1~262}\label{_p_r_o-_b_o_t128_c___lib_8cc_aa71931e52f9cee8098f617206dc61904}
+
+
+Definition at line 49 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+A2@{Tone\+\_\+\+A2}}
+\index{Tone\+\_\+\+A2@{Tone\+\_\+\+A2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+A2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+A2~131}\label{_p_r_o-_b_o_t128_c___lib_8cc_a5a8e24a9528d7097c3982e769eb1eea3}
+
+
+Definition at line 63 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Ais1@{Tone\+\_\+\+Ais1}}
+\index{Tone\+\_\+\+Ais1@{Tone\+\_\+\+Ais1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Ais1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Ais1~247}\label{_p_r_o-_b_o_t128_c___lib_8cc_af21e08a30615cfaa51a960b30c2f6a7f}
+
+
+Definition at line 50 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Ais2@{Tone\+\_\+\+Ais2}}
+\index{Tone\+\_\+\+Ais2@{Tone\+\_\+\+Ais2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Ais2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Ais2~125}\label{_p_r_o-_b_o_t128_c___lib_8cc_acb3ff05c1e74e6bff6e39c1e66dc05de}
+
+
+Definition at line 64 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+C1@{Tone\+\_\+\+C1}}
+\index{Tone\+\_\+\+C1@{Tone\+\_\+\+C1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+C1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+C1~440}\label{_p_r_o-_b_o_t128_c___lib_8cc_a78c2e1a70e29f024a297873799cfdfe0}
+
+
+Definition at line 40 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+C2@{Tone\+\_\+\+C2}}
+\index{Tone\+\_\+\+C2@{Tone\+\_\+\+C2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+C2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+C2~220}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6ea13d85493a0449e92146e0e2b3121d}
+
+
+Definition at line 54 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Cis1@{Tone\+\_\+\+Cis1}}
+\index{Tone\+\_\+\+Cis1@{Tone\+\_\+\+Cis1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Cis1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Cis1~413}\label{_p_r_o-_b_o_t128_c___lib_8cc_ad34d85d45c90be30ff184cf3bfc3137c}
+
+
+Definition at line 41 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Cis2@{Tone\+\_\+\+Cis2}}
+\index{Tone\+\_\+\+Cis2@{Tone\+\_\+\+Cis2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Cis2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Cis2~208}\label{_p_r_o-_b_o_t128_c___lib_8cc_a996fd081b0279e079badc6591b7d856f}
+
+
+Definition at line 55 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+D1@{Tone\+\_\+\+D1}}
+\index{Tone\+\_\+\+D1@{Tone\+\_\+\+D1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+D1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+D1~392}\label{_p_r_o-_b_o_t128_c___lib_8cc_a1e5557be07f4735f53d31db9085ddd54}
+
+
+Definition at line 42 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+D2@{Tone\+\_\+\+D2}}
+\index{Tone\+\_\+\+D2@{Tone\+\_\+\+D2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+D2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+D2~196}\label{_p_r_o-_b_o_t128_c___lib_8cc_a16c9859d6b07d61275dd1b2b0a19b44d}
+
+
+Definition at line 56 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Dis1@{Tone\+\_\+\+Dis1}}
+\index{Tone\+\_\+\+Dis1@{Tone\+\_\+\+Dis1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Dis1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Dis1~371}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6cdaf3440e97e0ed89690395d91d77e9}
+
+
+Definition at line 43 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Dis2@{Tone\+\_\+\+Dis2}}
+\index{Tone\+\_\+\+Dis2@{Tone\+\_\+\+Dis2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Dis2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Dis2~185}\label{_p_r_o-_b_o_t128_c___lib_8cc_ae9c8adec1f0b92133e38b124e8e03095}
+
+
+Definition at line 57 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+E1@{Tone\+\_\+\+E1}}
+\index{Tone\+\_\+\+E1@{Tone\+\_\+\+E1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+E1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+E1~350}\label{_p_r_o-_b_o_t128_c___lib_8cc_acea72c1937aaf61c6f29b03350f7d44c}
+
+
+Definition at line 44 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+E2@{Tone\+\_\+\+E2}}
+\index{Tone\+\_\+\+E2@{Tone\+\_\+\+E2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+E2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+E2~175}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8f47cf39cdbcc9d9f4fdb5a9bd0af9bc}
+
+
+Definition at line 58 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+F1@{Tone\+\_\+\+F1}}
+\index{Tone\+\_\+\+F1@{Tone\+\_\+\+F1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+F1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+F1~330}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8730115bb3b2ae912d8572a0d77184cb}
+
+
+Definition at line 45 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+F2@{Tone\+\_\+\+F2}}
+\index{Tone\+\_\+\+F2@{Tone\+\_\+\+F2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+F2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+F2~165}\label{_p_r_o-_b_o_t128_c___lib_8cc_a318f178ad857b52b49f423fee32845e0}
+
+
+Definition at line 59 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Fis1@{Tone\+\_\+\+Fis1}}
+\index{Tone\+\_\+\+Fis1@{Tone\+\_\+\+Fis1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Fis1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Fis1~312}\label{_p_r_o-_b_o_t128_c___lib_8cc_a81d7c404d521e3d203aa48f5a3a701a3}
+
+
+Definition at line 46 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Fis2@{Tone\+\_\+\+Fis2}}
+\index{Tone\+\_\+\+Fis2@{Tone\+\_\+\+Fis2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Fis2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Fis2~156}\label{_p_r_o-_b_o_t128_c___lib_8cc_a0a79ed8a900e5b4b6a29cd052fbeb5c1}
+
+
+Definition at line 60 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+G1@{Tone\+\_\+\+G1}}
+\index{Tone\+\_\+\+G1@{Tone\+\_\+\+G1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+G1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+G1~294}\label{_p_r_o-_b_o_t128_c___lib_8cc_a887ce57bd3339e425252e09e40cb93d4}
+
+
+Definition at line 47 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+G2@{Tone\+\_\+\+G2}}
+\index{Tone\+\_\+\+G2@{Tone\+\_\+\+G2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+G2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+G2~147}\label{_p_r_o-_b_o_t128_c___lib_8cc_a0d501f0d4bec663d04f2be5863bdd274}
+
+
+Definition at line 61 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Gis1@{Tone\+\_\+\+Gis1}}
+\index{Tone\+\_\+\+Gis1@{Tone\+\_\+\+Gis1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Gis1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Gis1~277}\label{_p_r_o-_b_o_t128_c___lib_8cc_ae23c9bd83f081e6ea05d4a028c3c0699}
+
+
+Definition at line 48 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+Gis2@{Tone\+\_\+\+Gis2}}
+\index{Tone\+\_\+\+Gis2@{Tone\+\_\+\+Gis2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+Gis2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+Gis2~138}\label{_p_r_o-_b_o_t128_c___lib_8cc_afdd2206298d9e5cd3c656b11d3a54bb1}
+
+
+Definition at line 62 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+H1@{Tone\+\_\+\+H1}}
+\index{Tone\+\_\+\+H1@{Tone\+\_\+\+H1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+H1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+H1~234}\label{_p_r_o-_b_o_t128_c___lib_8cc_a5652f5eb38a6ca089d4d061fab4dccae}
+
+
+Definition at line 51 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Tone\+\_\+\+H2@{Tone\+\_\+\+H2}}
+\index{Tone\+\_\+\+H2@{Tone\+\_\+\+H2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Tone\+\_\+\+H2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Tone\+\_\+\+H2~117}\label{_p_r_o-_b_o_t128_c___lib_8cc_a32cc72dc3a5304a3d6e0655fa839b567}
+
+
+Definition at line 65 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!T\+S\+OP@{T\+S\+OP}}
+\index{T\+S\+OP@{T\+S\+OP}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{T\+S\+OP}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+OP~26}\label{_p_r_o-_b_o_t128_c___lib_8cc_a888e2395ab91b4801c7a298ed84c8ea1}
+
+
+Definition at line 37 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!U\+N\+I\+T\+\_\+\+T\+I\+CK@{U\+N\+I\+T\+\_\+\+T\+I\+CK}}
+\index{U\+N\+I\+T\+\_\+\+T\+I\+CK@{U\+N\+I\+T\+\_\+\+T\+I\+CK}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{U\+N\+I\+T\+\_\+\+T\+I\+CK}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+N\+I\+T\+\_\+\+T\+I\+CK~3}\label{_p_r_o-_b_o_t128_c___lib_8cc_a42d85f223f3cb2d9257da4cd74f35178}
+
+
+Definition at line 67 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+
+
+\subsection{Function Documentation}
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!A\+B\+S\+\_\+\+I\+NT@{A\+B\+S\+\_\+\+I\+NT}}
+\index{A\+B\+S\+\_\+\+I\+NT@{A\+B\+S\+\_\+\+I\+NT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{A\+B\+S\+\_\+\+I\+N\+T(int Val)}]{\setlength{\rightskip}{0pt plus 5cm}int A\+B\+S\+\_\+\+I\+NT (
+\begin{DoxyParamCaption}
+\item[{int}]{Val}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6931853acc4b6c5522653853852316b0}
+
+
+Definition at line 726 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!A\+B\+S\+\_\+\+S\+I\+N\+G\+LE@{A\+B\+S\+\_\+\+S\+I\+N\+G\+LE}}
+\index{A\+B\+S\+\_\+\+S\+I\+N\+G\+LE@{A\+B\+S\+\_\+\+S\+I\+N\+G\+LE}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{A\+B\+S\+\_\+\+S\+I\+N\+G\+L\+E(float Val)}]{\setlength{\rightskip}{0pt plus 5cm}float A\+B\+S\+\_\+\+S\+I\+N\+G\+LE (
+\begin{DoxyParamCaption}
+\item[{float}]{Val}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6291afd22dc88a54d85135a4083adf9d}
+
+
+Definition at line 740 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!A\+C\+S\+\_\+\+I\+N\+IT@{A\+C\+S\+\_\+\+I\+N\+IT}}
+\index{A\+C\+S\+\_\+\+I\+N\+IT@{A\+C\+S\+\_\+\+I\+N\+IT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{A\+C\+S\+\_\+\+I\+N\+I\+T(byte sensitivity)}]{\setlength{\rightskip}{0pt plus 5cm}void A\+C\+S\+\_\+\+I\+N\+IT (
+\begin{DoxyParamCaption}
+\item[{byte}]{sensitivity}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a0e9298cb2087d69731636320aad08ec8}
+
+
+Definition at line 653 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!A\+C\+S\+\_\+\+L\+E\+FT@{A\+C\+S\+\_\+\+L\+E\+FT}}
+\index{A\+C\+S\+\_\+\+L\+E\+FT@{A\+C\+S\+\_\+\+L\+E\+FT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{A\+C\+S\+\_\+\+L\+E\+F\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}byte A\+C\+S\+\_\+\+L\+E\+FT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_af73f70c711a49def7e47ecb1fee8762e}
+
+
+Definition at line 678 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!A\+C\+S\+\_\+\+R\+I\+G\+HT@{A\+C\+S\+\_\+\+R\+I\+G\+HT}}
+\index{A\+C\+S\+\_\+\+R\+I\+G\+HT@{A\+C\+S\+\_\+\+R\+I\+G\+HT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{A\+C\+S\+\_\+\+R\+I\+G\+H\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}byte A\+C\+S\+\_\+\+R\+I\+G\+HT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_af2d2ecacb378f8d9173dcd899d8e6790}
+
+
+Definition at line 666 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!A\+K\+K\+U\+\_\+\+S\+PG@{A\+K\+K\+U\+\_\+\+S\+PG}}
+\index{A\+K\+K\+U\+\_\+\+S\+PG@{A\+K\+K\+U\+\_\+\+S\+PG}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{A\+K\+K\+U\+\_\+\+S\+P\+G(void)}]{\setlength{\rightskip}{0pt plus 5cm}float A\+K\+K\+U\+\_\+\+S\+PG (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_abeddc305b8339eabb634e784dae32177}
+
+
+Definition at line 389 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+E\+EP@{B\+E\+EP}}
+\index{B\+E\+EP@{B\+E\+EP}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+E\+E\+P(word Tone, word Periode)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+E\+EP (
+\begin{DoxyParamCaption}
+\item[{word}]{Tone, }
+\item[{word}]{Periode}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6ff245af568206c677dc5fb247bebada}
+
+
+Definition at line 322 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+L\+L\+\_\+\+O\+FF@{B\+L\+L\+\_\+\+O\+FF}}
+\index{B\+L\+L\+\_\+\+O\+FF@{B\+L\+L\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+L\+L\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+L\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_adf808a03f28f0010ec49096cc24d5309}
+
+
+Definition at line 267 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+L\+L\+\_\+\+ON@{B\+L\+L\+\_\+\+ON}}
+\index{B\+L\+L\+\_\+\+ON@{B\+L\+L\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+L\+L\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+L\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a95f80ad1b482889db419b2b3d70c3062}
+
+
+Definition at line 261 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+L\+R\+\_\+\+O\+FF@{B\+L\+R\+\_\+\+O\+FF}}
+\index{B\+L\+R\+\_\+\+O\+FF@{B\+L\+R\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+L\+R\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+R\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a6f3911c1a4cf24f55c55156d2b5f3354}
+
+
+Definition at line 279 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+L\+R\+\_\+\+ON@{B\+L\+R\+\_\+\+ON}}
+\index{B\+L\+R\+\_\+\+ON@{B\+L\+R\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+L\+R\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+R\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8ef7695bc132964e48c1f246b64b9e43}
+
+
+Definition at line 273 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!B\+U\+T\+T\+ON@{B\+U\+T\+T\+ON}}
+\index{B\+U\+T\+T\+ON@{B\+U\+T\+T\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{B\+U\+T\+T\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}byte B\+U\+T\+T\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ad9bb548076054d855fd03b2daec6b22f}
+
+
+Definition at line 143 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!D\+E\+L\+A\+Y\+\_\+\+MS@{D\+E\+L\+A\+Y\+\_\+\+MS}}
+\index{D\+E\+L\+A\+Y\+\_\+\+MS@{D\+E\+L\+A\+Y\+\_\+\+MS}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{D\+E\+L\+A\+Y\+\_\+\+M\+S(int time)}]{\setlength{\rightskip}{0pt plus 5cm}void D\+E\+L\+A\+Y\+\_\+\+MS (
+\begin{DoxyParamCaption}
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a44a6f155a9d757e3e589b9b5db46fdb5}
+
+
+Definition at line 690 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!D\+R\+I\+VE@{D\+R\+I\+VE}}
+\index{D\+R\+I\+VE@{D\+R\+I\+VE}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{D\+R\+I\+V\+E(byte left, byte right)}]{\setlength{\rightskip}{0pt plus 5cm}void D\+R\+I\+VE (
+\begin{DoxyParamCaption}
+\item[{byte}]{left, }
+\item[{byte}]{right}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a5e0469246079a6a73010c661e93fe70c}
+
+
+Definition at line 453 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+RD@{D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+RD}}
+\index{D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+RD@{D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+RD}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+R\+D(byte speed)}]{\setlength{\rightskip}{0pt plus 5cm}void D\+R\+I\+V\+E\+\_\+\+F\+O\+R\+W\+A\+RD (
+\begin{DoxyParamCaption}
+\item[{byte}]{speed}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ad30a4a3d970dc849157bce695967ce11}
+
+
+Definition at line 553 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!D\+R\+I\+V\+E\+\_\+\+I\+N\+IT@{D\+R\+I\+V\+E\+\_\+\+I\+N\+IT}}
+\index{D\+R\+I\+V\+E\+\_\+\+I\+N\+IT@{D\+R\+I\+V\+E\+\_\+\+I\+N\+IT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{D\+R\+I\+V\+E\+\_\+\+I\+N\+I\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}D\+R\+I\+V\+E\+\_\+\+I\+N\+IT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a9b6eeb566525014734756ead4d116149}
+
+
+Initialise le moteur. 
+
+
+
+Definition at line 415 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!D\+R\+I\+V\+E\+\_\+\+O\+FF@{D\+R\+I\+V\+E\+\_\+\+O\+FF}}
+\index{D\+R\+I\+V\+E\+\_\+\+O\+FF@{D\+R\+I\+V\+E\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{D\+R\+I\+V\+E\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}D\+R\+I\+V\+E\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a660e16a6dff1fda30fd888a1517cbce5}
+
+
+Arrêter les moteurs. 
+
+
+
+Definition at line 440 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!D\+R\+I\+V\+E\+\_\+\+ON@{D\+R\+I\+V\+E\+\_\+\+ON}}
+\index{D\+R\+I\+V\+E\+\_\+\+ON@{D\+R\+I\+V\+E\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{D\+R\+I\+V\+E\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}D\+R\+I\+V\+E\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a9770b35b48c54b61f9e999af33702465}
+
+
+Activer les moteurs. 
+
+
+
+Definition at line 430 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+FF@{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+FF}}
+\index{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+FF@{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}void E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ac4d58ec0219c2cf4f85eefa41800bc97}
+
+
+Definition at line 316 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+ON@{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+ON}}
+\index{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+ON@{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}void E\+N\+C\+\_\+\+L\+E\+D\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a23004b527f4e7555005fe9d706330064}
+
+
+Definition at line 310 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+SR@{E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+SR}}
+\index{E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+SR@{E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+SR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+S\+R(void)}]{\setlength{\rightskip}{0pt plus 5cm}void E\+N\+C\+\_\+\+L\+E\+F\+T\+\_\+\+I\+SR (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_acf09e6b557fad95c7ec659b971cb9174}
+
+
+Definition at line 294 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+SR@{E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+SR}}
+\index{E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+SR@{E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+SR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+S\+R(void)}]{\setlength{\rightskip}{0pt plus 5cm}void E\+N\+C\+\_\+\+R\+I\+G\+H\+T\+\_\+\+I\+SR (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a1522d6cd677885ef68259304c87ce47e}
+
+
+Definition at line 285 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!F\+L\+L\+\_\+\+O\+FF@{F\+L\+L\+\_\+\+O\+FF}}
+\index{F\+L\+L\+\_\+\+O\+FF@{F\+L\+L\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{F\+L\+L\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}void F\+L\+L\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ac2132a6d33e1477b7eca37fb0d6b3b10}
+
+
+Definition at line 243 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!F\+L\+L\+\_\+\+ON@{F\+L\+L\+\_\+\+ON}}
+\index{F\+L\+L\+\_\+\+ON@{F\+L\+L\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{F\+L\+L\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}void F\+L\+L\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a7655f9774b5256357ed9cd1715790181}
+
+
+Definition at line 237 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!F\+L\+R\+\_\+\+O\+FF@{F\+L\+R\+\_\+\+O\+FF}}
+\index{F\+L\+R\+\_\+\+O\+FF@{F\+L\+R\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{F\+L\+R\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}void F\+L\+R\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a09023aec9459db69d7cc74775d8e6e82}
+
+
+Definition at line 255 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!F\+L\+R\+\_\+\+ON@{F\+L\+R\+\_\+\+ON}}
+\index{F\+L\+R\+\_\+\+ON@{F\+L\+R\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{F\+L\+R\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}void F\+L\+R\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a3f759d727d4635945774fbdc91278c4c}
+
+
+Definition at line 249 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!G\+E\+T\+\_\+\+A\+DC@{G\+E\+T\+\_\+\+A\+DC}}
+\index{G\+E\+T\+\_\+\+A\+DC@{G\+E\+T\+\_\+\+A\+DC}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{G\+E\+T\+\_\+\+A\+D\+C(byte Channel)}]{\setlength{\rightskip}{0pt plus 5cm}word G\+E\+T\+\_\+\+A\+DC (
+\begin{DoxyParamCaption}
+\item[{byte}]{Channel}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_af52d3d659134abc757f0c28b2f3c57e2}
+
+
+Definition at line 401 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!G\+O\+\_\+\+T\+U\+RN@{G\+O\+\_\+\+T\+U\+RN}}
+\index{G\+O\+\_\+\+T\+U\+RN@{G\+O\+\_\+\+T\+U\+RN}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{G\+O\+\_\+\+T\+U\+R\+N(int distance, int degree, byte speed)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+O\+\_\+\+T\+U\+RN (
+\begin{DoxyParamCaption}
+\item[{int}]{distance, }
+\item[{int}]{degree, }
+\item[{byte}]{speed}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a1d644b13820f91d466f07bff81fbebfb}
+
+
+Definition at line 561 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+AD@{G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+AD}}
+\index{G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+AD@{G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+AD}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+A\+D(float Val)}]{\setlength{\rightskip}{0pt plus 5cm}float G\+R\+A\+D\+\_\+\+To\+\_\+\+R\+AD (
+\begin{DoxyParamCaption}
+\item[{float}]{Val}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ac2e81c029392d2a7e8e1660a55a14091}
+
+
+Definition at line 700 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!L\+D\+R\+\_\+\+L\+E\+FT@{L\+D\+R\+\_\+\+L\+E\+FT}}
+\index{L\+D\+R\+\_\+\+L\+E\+FT@{L\+D\+R\+\_\+\+L\+E\+FT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{L\+D\+R\+\_\+\+L\+E\+F\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}word L\+D\+R\+\_\+\+L\+E\+FT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ad0084057cadf546e06fefa6396d5ed98}
+
+
+Definition at line 345 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!L\+D\+R\+\_\+\+R\+I\+G\+HT@{L\+D\+R\+\_\+\+R\+I\+G\+HT}}
+\index{L\+D\+R\+\_\+\+R\+I\+G\+HT@{L\+D\+R\+\_\+\+R\+I\+G\+HT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{L\+D\+R\+\_\+\+R\+I\+G\+H\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}word L\+D\+R\+\_\+\+R\+I\+G\+HT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_aca1deb4225dcb42ac399406642c9e4b8}
+
+
+Definition at line 353 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+FF@{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+FF}}
+\index{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+FF@{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+FF}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+F\+F(void)}]{\setlength{\rightskip}{0pt plus 5cm}void L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a30681fdad2d76187cf755956e1df914f}
+
+
+Definition at line 383 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+ON@{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+ON}}
+\index{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+ON@{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+ON}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+O\+N(void)}]{\setlength{\rightskip}{0pt plus 5cm}void L\+I\+N\+E\+\_\+\+L\+E\+D\+\_\+\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a01212a4fe8df1bd756ca035f78e37483}
+
+
+Definition at line 377 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!M\+A\+K\+E\+\_\+\+I\+NT@{M\+A\+K\+E\+\_\+\+I\+NT}}
+\index{M\+A\+K\+E\+\_\+\+I\+NT@{M\+A\+K\+E\+\_\+\+I\+NT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{M\+A\+K\+E\+\_\+\+I\+N\+T(byte a, byte b)}]{\setlength{\rightskip}{0pt plus 5cm}word M\+A\+K\+E\+\_\+\+I\+NT (
+\begin{DoxyParamCaption}
+\item[{byte}]{a, }
+\item[{byte}]{b}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a79c07681b153aee5badf2445feef103a}
+
+
+Definition at line 718 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!M\+O\+T\+O\+R\+\_\+\+D\+IR@{M\+O\+T\+O\+R\+\_\+\+D\+IR}}
+\index{M\+O\+T\+O\+R\+\_\+\+D\+IR@{M\+O\+T\+O\+R\+\_\+\+D\+IR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+\+D\+I\+R(byte left, byte right)}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+T\+O\+R\+\_\+\+D\+IR (
+\begin{DoxyParamCaption}
+\item[{byte}]{left, }
+\item[{byte}]{right}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a60022e07f228d5f3625598563bb9c868}
+
+
+Definition at line 539 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+ER@{M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+ER}}
+\index{M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+ER@{M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+ER}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+E\+R(byte left, byte right)}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+T\+O\+R\+\_\+\+P\+O\+W\+ER (
+\begin{DoxyParamCaption}
+\item[{byte}]{left, }
+\item[{byte}]{right}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_adc4824896c954e823ffd07a7df578ae7}
+
+
+Definition at line 467 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!M\+O\+T\+O\+R\+\_\+\+S\+T\+OP@{M\+O\+T\+O\+R\+\_\+\+S\+T\+OP}}
+\index{M\+O\+T\+O\+R\+\_\+\+S\+T\+OP@{M\+O\+T\+O\+R\+\_\+\+S\+T\+OP}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+\+S\+T\+O\+P(void)}]{\setlength{\rightskip}{0pt plus 5cm}void M\+O\+T\+O\+R\+\_\+\+S\+T\+OP (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a481d53a4489d09225f4b5975cd82a216}
+
+
+Definition at line 546 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!O\+D\+O\+\_\+\+R\+E\+S\+ET@{O\+D\+O\+\_\+\+R\+E\+S\+ET}}
+\index{O\+D\+O\+\_\+\+R\+E\+S\+ET@{O\+D\+O\+\_\+\+R\+E\+S\+ET}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{O\+D\+O\+\_\+\+R\+E\+S\+E\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}void O\+D\+O\+\_\+\+R\+E\+S\+ET (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_af4dddc582e874a4144430bd132c4248d}
+
+
+Definition at line 303 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+IT@{P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+IT}}
+\index{P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+IT@{P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+IT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+I\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}P\+R\+O\+\_\+\+B\+O\+T128\+\_\+\+I\+N\+IT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a01b59ba6fe004f37d5459d22eb95adbc}
+
+
+Initialise le hardware de base du P\+R\+O-\/\+B\+O\+T12, toujours commencer pars cette fonction. 
+
+
+
+Definition at line 90 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+AD@{R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+AD}}
+\index{R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+AD@{R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+AD}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+A\+D(float Val)}]{\setlength{\rightskip}{0pt plus 5cm}float R\+A\+D\+\_\+\+To\+\_\+\+G\+R\+AD (
+\begin{DoxyParamCaption}
+\item[{float}]{Val}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_ad05d831b07fc61427c5b64bd2ac5bd2b}
+
+
+Definition at line 709 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+FT@{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+FT}}
+\index{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+FT@{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+FT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+F\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}word R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+FT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_aa0adf2c83bb986f501d330c388d92137}
+
+
+Definition at line 361 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+HT@{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+HT}}
+\index{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+HT@{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+HT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+H\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}word R\+E\+A\+D\+\_\+\+L\+I\+N\+E\+\_\+\+R\+I\+G\+HT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_af80f68ceeaadd7dce7bc375d6e1adf5c}
+
+
+Definition at line 369 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+EL@{S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+EL}}
+\index{S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+EL@{S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+EL}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+E\+L(void)}]{\setlength{\rightskip}{0pt plus 5cm}S\+O\+U\+N\+D\+\_\+\+L\+E\+V\+EL (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_af5e07b1f556281f5cb8d8091e9aed92c}
+
+
+recupérer le niveau du bruit dans l\textquotesingle{}envirenement 
+
+\begin{DoxyReturn}{Returns}
+une valeur entre 0 à 1023 
+\end{DoxyReturn}
+
+
+Definition at line 337 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+Y\+S\+T\+E\+M\+\_\+\+C\+NT@{S\+Y\+S\+T\+E\+M\+\_\+\+C\+NT}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+C\+NT@{S\+Y\+S\+T\+E\+M\+\_\+\+C\+NT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+Y\+S\+T\+E\+M\+\_\+\+C\+N\+T(void)}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Y\+S\+T\+E\+M\+\_\+\+C\+NT (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_r_o-_b_o_t128_c___lib_8cc_a7f4c9101509959e8a8feface54306cec}
+
+
+Definition at line 157 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+
+
+\subsection{Variable Documentation}
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!C\+N\+T1@{C\+N\+T1}}
+\index{C\+N\+T1@{C\+N\+T1}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{C\+N\+T1}]{\setlength{\rightskip}{0pt plus 5cm}int C\+N\+T1}\label{_p_r_o-_b_o_t128_c___lib_8cc_a11dc891bdcec5a27f035c13d942e219f}
+
+
+Definition at line 73 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!Direction@{Direction}}
+\index{Direction@{Direction}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}int Direction}\label{_p_r_o-_b_o_t128_c___lib_8cc_a633488975bec9778113562927745d46c}
+
+
+Definition at line 79 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT}]{\setlength{\rightskip}{0pt plus 5cm}int E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+FT}\label{_p_r_o-_b_o_t128_c___lib_8cc_a57d6392cdeb25488cb60b6f653dc8a11}
+
+
+Definition at line 70 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT}]{\setlength{\rightskip}{0pt plus 5cm}int E\+N\+C\+O\+D\+E\+R\+\_\+\+L\+E\+F\+T\+\_\+\+C\+NT}\label{_p_r_o-_b_o_t128_c___lib_8cc_ae0e6f127024f8b348aa52493e7bc096a}
+
+
+Definition at line 71 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT}]{\setlength{\rightskip}{0pt plus 5cm}int E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+HT}\label{_p_r_o-_b_o_t128_c___lib_8cc_a9745a4c2658473476fcf8bb0a6634a62}
+
+
+Definition at line 70 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT@{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT}]{\setlength{\rightskip}{0pt plus 5cm}int E\+N\+C\+O\+D\+E\+R\+\_\+\+R\+I\+G\+H\+T\+\_\+\+C\+NT}\label{_p_r_o-_b_o_t128_c___lib_8cc_a8dfdee40ffaa719ee0fa8ee234170def}
+
+
+Definition at line 71 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+R\+R\+OR@{E\+R\+R\+OR}}
+\index{E\+R\+R\+OR@{E\+R\+R\+OR}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+R\+R\+OR}]{\setlength{\rightskip}{0pt plus 5cm}int E\+R\+R\+OR}\label{_p_r_o-_b_o_t128_c___lib_8cc_a59902cbbaff65b4bb85a63546ab4e52f}
+
+
+Definition at line 79 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!E\+R\+R\+O\+R\+\_\+\+L\+A\+ST@{E\+R\+R\+O\+R\+\_\+\+L\+A\+ST}}
+\index{E\+R\+R\+O\+R\+\_\+\+L\+A\+ST@{E\+R\+R\+O\+R\+\_\+\+L\+A\+ST}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+L\+A\+ST}]{\setlength{\rightskip}{0pt plus 5cm}int E\+R\+R\+O\+R\+\_\+\+L\+A\+ST}\label{_p_r_o-_b_o_t128_c___lib_8cc_a96c0276be3f5fba4ceb4f8b95638fdae}
+
+
+Definition at line 79 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!left\+\_\+dir@{left\+\_\+dir}}
+\index{left\+\_\+dir@{left\+\_\+dir}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{left\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}byte left\+\_\+dir}\label{_p_r_o-_b_o_t128_c___lib_8cc_ac234cd656c070f4c2c565cd1f50477f9}
+
+
+Definition at line 76 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!M\+O\+T\+O\+R\+\_\+L@{M\+O\+T\+O\+R\+\_\+L}}
+\index{M\+O\+T\+O\+R\+\_\+L@{M\+O\+T\+O\+R\+\_\+L}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+L}]{\setlength{\rightskip}{0pt plus 5cm}int M\+O\+T\+O\+R\+\_\+L}\label{_p_r_o-_b_o_t128_c___lib_8cc_a7472e5b11892100d7b8a2caf5f35bcd8}
+
+
+Definition at line 78 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!M\+O\+T\+O\+R\+\_\+R@{M\+O\+T\+O\+R\+\_\+R}}
+\index{M\+O\+T\+O\+R\+\_\+R@{M\+O\+T\+O\+R\+\_\+R}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+R}]{\setlength{\rightskip}{0pt plus 5cm}int M\+O\+T\+O\+R\+\_\+R}\label{_p_r_o-_b_o_t128_c___lib_8cc_aef182652a4dfaae7bd9acec031e7882d}
+
+
+Definition at line 78 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!O\+D\+O\+\_\+\+L\+E\+FT@{O\+D\+O\+\_\+\+L\+E\+FT}}
+\index{O\+D\+O\+\_\+\+L\+E\+FT@{O\+D\+O\+\_\+\+L\+E\+FT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{O\+D\+O\+\_\+\+L\+E\+FT}]{\setlength{\rightskip}{0pt plus 5cm}int O\+D\+O\+\_\+\+L\+E\+FT}\label{_p_r_o-_b_o_t128_c___lib_8cc_a317a7961ac0106bb515cdb14e15f137f}
+
+
+Definition at line 72 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!O\+D\+O\+\_\+\+R\+I\+G\+HT@{O\+D\+O\+\_\+\+R\+I\+G\+HT}}
+\index{O\+D\+O\+\_\+\+R\+I\+G\+HT@{O\+D\+O\+\_\+\+R\+I\+G\+HT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{O\+D\+O\+\_\+\+R\+I\+G\+HT}]{\setlength{\rightskip}{0pt plus 5cm}int O\+D\+O\+\_\+\+R\+I\+G\+HT}\label{_p_r_o-_b_o_t128_c___lib_8cc_ae71d8f45f87f193a97e6f5fb210164cf}
+
+
+Definition at line 72 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!P\+O\+W\+E\+R\+\_\+\+L\+E\+FT@{P\+O\+W\+E\+R\+\_\+\+L\+E\+FT}}
+\index{P\+O\+W\+E\+R\+\_\+\+L\+E\+FT@{P\+O\+W\+E\+R\+\_\+\+L\+E\+FT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{P\+O\+W\+E\+R\+\_\+\+L\+E\+FT}]{\setlength{\rightskip}{0pt plus 5cm}int P\+O\+W\+E\+R\+\_\+\+L\+E\+FT}\label{_p_r_o-_b_o_t128_c___lib_8cc_ae8240e99779112e294652a770a8ceb2d}
+
+
+Definition at line 78 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT@{P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT}}
+\index{P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT@{P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT}]{\setlength{\rightskip}{0pt plus 5cm}int P\+O\+W\+E\+R\+\_\+\+R\+I\+G\+HT}\label{_p_r_o-_b_o_t128_c___lib_8cc_a540b4b9cdff8d6e739e73f578ee62b16}
+
+
+Definition at line 78 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!right\+\_\+dir@{right\+\_\+dir}}
+\index{right\+\_\+dir@{right\+\_\+dir}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{right\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}byte right\+\_\+dir}\label{_p_r_o-_b_o_t128_c___lib_8cc_ab9dd44c661d7c5e32ce7838f0281e231}
+
+
+Definition at line 76 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+P\+E\+ED@{S\+P\+E\+ED}}
+\index{S\+P\+E\+ED@{S\+P\+E\+ED}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+P\+E\+ED}]{\setlength{\rightskip}{0pt plus 5cm}int S\+P\+E\+ED}\label{_p_r_o-_b_o_t128_c___lib_8cc_a03fe4605425aef04f4dad440784dbf45}
+
+
+Definition at line 79 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+
+\index{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}!S\+W2@{S\+W2}}
+\index{S\+W2@{S\+W2}!P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc@{P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc}}
+\subsubsection[{S\+W2}]{\setlength{\rightskip}{0pt plus 5cm}int S\+W2}\label{_p_r_o-_b_o_t128_c___lib_8cc_aa0e7dce462be9e48c7b835d7d7cc4349}
+
+
+Definition at line 74 of file P\+R\+O-\/\+B\+O\+T128\+C\+\_\+\+Lib.\+cc.
+

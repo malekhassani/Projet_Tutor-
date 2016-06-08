@@ -5,7 +5,7 @@
    \author HASSANI MALEK & ADLI OUAHIB
    \version 0.1
    \author Email  : malek.1905@live.fr
-   \date 12/2015
+   \date 05/2016
 */
  int count;
  byte go;
@@ -49,6 +49,11 @@ int Line_right_value;
       MOTOR_STOP();
       AbsDelay(100);
  }
+ /**
+          \fn capteurs_obstacle()
+           \brief Detection des obstacles
+
+         */
  void capteurs_obstacle(void){
   Msg_WriteText("capteurs_obstacle");
         Msg_WriteChar(13) ;
@@ -59,7 +64,7 @@ int Line_right_value;
       {
 
         if ((ACS_LEFT() == 1) && (ACS_RIGHT() == 1)){
-        Forward();
+        //Forward();
         Msg_WriteText("avant");
         Msg_WriteChar(13);
         AbsDelay(500);
@@ -87,7 +92,11 @@ int Line_right_value;
  }
 
 
+/**
+          \fn Forward()
+           \brief Marche avant
 
+         */
 
  void Forward(void)      //Marche Avant
 {
@@ -98,7 +107,11 @@ int Line_right_value;
     DRIVE_FORWARD(7);
     DELAY_MS(150);
 }
+ /**
+          \fn Backward()
+           \brief Marche Arriere
 
+         */
 void Backward(void)     //Marche Arriere
 {
     BLL_ON();
@@ -109,6 +122,11 @@ void Backward(void)     //Marche Arriere
     GO_TURN(0,60,150);
 }
 
+/**
+          \fn Turn_Left()
+           \brief Tourner à gauche
+
+         */
 void Turn_Left(void)    //Tourner à gauche
 {
     FLL_ON();
@@ -117,6 +135,11 @@ void Turn_Left(void)    //Tourner à gauche
     BLR_OFF();
     GO_TURN(0,-45,150);
 }
+/**
+          \fn Turn_Right()
+           \brief Tourner à droite
+
+         */
 
 void Turn_Right(void)   //Tourner à droite
 {
@@ -126,6 +149,11 @@ void Turn_Right(void)   //Tourner à droite
     BLR_OFF();
     GO_TURN(0,45,150);
 }
+/**
+          \fn capteurs_lignes()
+           \brief detecter une ligne et la suivre
+
+         */
  void capteurs_lignes(void){
  Msg_WriteText("capteurs_lignes");
         Msg_WriteChar(13) ;
@@ -158,7 +186,11 @@ void Turn_Right(void)   //Tourner à droite
      }while (1);
 
  }
+ /**
+    \fn capteurs_lumineux()
+      \brief detecter une source lumineuse (Torche) et la suivre
 
+         */
 
  void  capteurs_lumineux (void){
 
@@ -214,6 +246,7 @@ void main(void){
         DRIVE_ON();
     DRIVE_INIT();
   AbsDelay(100);
+            Thread_Start(0,capteurs_obstacle);
 
  while(1){
 
@@ -242,19 +275,26 @@ void main(void){
         AbsDelay(100);
         AbsDelay(100);
 
+
    count++;
-   if(((count % 2)== 0)){
-        Thread_Start(1,capteurs_lumineux);
-        Thread_Wait(2,2);
-               //stop();
+   switch(count){
+   case 1:
+        Thread_Start(4,capteurs_lumineux);
+        Thread_Wait(3,2);
 
-         }
-            if(((count % 2)!= 0)){
-                Thread_Start(2,capteurs_lignes);
-                Thread_Wait(1,1);
-                 //marche();
 
-             }
+   break;
+   case 2:
+        Thread_Start(3,capteurs_lignes);
+        Thread_Wait(4,2);
+        count=0;
+   break;
+
+
+
+   }
+
+
    }
 
 
